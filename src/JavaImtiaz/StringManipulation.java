@@ -16,12 +16,12 @@ public class StringManipulation {
         }else System.out.println("oggggggggggg");
 
 
-        String alhpahChunk = alphabet.substring(4,15);
+        String alphaChunk = alphabet.substring(4,15);
         //loop through string in reverse
         for (int i = alphabet.length() - 1; i >= 0; i--){
             System.out.println("Character: " + alphabet.charAt(i));
         }
-        System.out.println(alhpahChunk);
+        System.out.println(alphaChunk);
         String subName = name.substring(2,5);
         System.out.println(subName);
         System.out.println(b.substring(1,3));
