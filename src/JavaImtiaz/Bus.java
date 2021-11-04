@@ -19,7 +19,7 @@ public class Bus {
                 break;
             case 4: mnth = "April";
                 break;
-            default: mnth = "retard";
+            default: mnth ="WRONG";
                 break;
 
         }
