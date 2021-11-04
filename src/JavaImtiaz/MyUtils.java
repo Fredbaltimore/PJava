@@ -1,15 +1,12 @@
 package JavaImtiaz;
-import SpeciesOnEarth.Animal;
-import SpeciesOnEarth.Bird;
-import SpeciesOnEarth.Cat;
 
 public class MyUtils {
     public static void main(String[] args) {
         System.out.println(args[0] +"\n"+ args[1]);
-        Animal cat = new Cat();
-        cat.sounds();
-        Animal bird = new Bird();
-        bird.sounds();
+//        Animal cat = new Cat();
+//        cat.sounds();
+//        Animal bird = new Bird();
+//        bird.sounds();
 
     }
 

@@ -1,7 +1,7 @@
 package JavaImtiaz;
 
-import SpeciesOnEarth.Car;
-import SpeciesOnEarth.Engine;
+import JavaImtiaz.cardealership.Car;
+
 
 public class Methods extends MyUtils {
 
@@ -25,14 +25,14 @@ public class Methods extends MyUtils {
         MyUtils my = new MyUtils();
         my.sumTwoNumbers(3, 44);//instance method
         Car sportsCar = new Car();
-        Engine engine = new Engine();
-        sportsCar.setType("bigengine");
-
-        sportsCar.setEngineType("V8 Hemi");
-        sportsCar.setExteriorColor("Cherry Red");
-        sportsCar.setMaxSpeed(225);
-        System.out.println(sportsCar.getExteriorColor()+"\n"+ sportsCar.getMaxSpeed()+"\n"+
-                sportsCar.getType());
+//        Engine engine = new Engine();
+//        sportsCar.setType("bigengine");
+//
+//        sportsCar.setEngineType("V8 Hemi");
+//        sportsCar.setExteriorColor("Cherry Red");
+//        sportsCar.setMaxSpeed(225);
+//        System.out.println(sportsCar.getExteriorColor()+"\n"+ sportsCar.getMaxSpeed()+"\n"+
+//                sportsCar.getType());
 
         System.out.println(addTen(30));//static method
         sumAll(3, 3);
@@ -44,19 +44,7 @@ public class Methods extends MyUtils {
 
 
     }
-    public static void printCatagories(String str){
-        int i = 0;
 
-        while(true){
-            int found = str.indexOf("category:", i);
-            if(found == -1) break;
-            int start = found + 9;
-            int end = str.indexOf(" ", start);
-            System.out.println(str.substring(start, end));
-            i = end + 1;
-        }
-
-    }
 
 }
 
