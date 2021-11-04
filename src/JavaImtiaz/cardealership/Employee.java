@@ -1,7 +1,6 @@
 package JavaImtiaz.cardealership;
 
 public class Employee extends Person {
-
     String employeeID;
     String employeePosition;
     public Employee(String name, String employeeID, String employeePosition){
