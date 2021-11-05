@@ -14,7 +14,7 @@ public class Dealership {
         Employee employeeOne = new Employee("Ronald","22345", "Car Salesmen");
         Employee employeeTwo = new Employee("James", "22355", "Head Car Salesmen");
         Customer c = new Customer("Robert Fisher", "4545 Maple Drive",15000, true);
-        c.buyCar(carVroom, employeeTwo, true, c);
-        employeeTwo.serveCustomer(c,true, carVroom, employeeTwo);
+        c.buyCar(carVroom, employeeTwo, c);
+        employeeTwo.serveCustomer(c, carVroom, employeeTwo);
     }
 }

@@ -27,7 +27,15 @@ public class Customer extends Person {
         this.finance = finance;
     }
 
-    public void buyCar(Vehicle vehicle, Employee employee, boolean finance, Customer customer){
-        System.out.println(customer.getName()+ " replies: "+"Hello " + employee.getName() + " I'd like to purchase the " + vehicle.getModel());
+    public void buyCar(Vehicle vehicle, Employee employee, Customer customer){
+        String financedOrNot = null;
+        if(!finance){
+            financedOrNot = "not willing";
+
+        }else financedOrNot = "willing";
+
+        System.out.println(customer.getName()+ " says: "+"Hello " + employee.getName() + " I'd like to purchase the "
+                + vehicle.getModel() + " and have " +customer.getUpfrontPayment()
+                + " upfront to lay down on it" +  " and " +financedOrNot+ " to finance");
     }
 }

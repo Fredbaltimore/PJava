@@ -8,12 +8,13 @@ public class Employee extends Person {
         this.employeeID = employeeID;
         this.employeePosition = employeePosition;
     }
-    public void serveCustomer(Customer customer, boolean finance, Vehicle vehicle, Employee employee){
+    public void serveCustomer(Customer customer, Vehicle vehicle, Employee employee){
+        boolean finance = customer.isFinance();
         if(finance == true){
             checkCreditHistory(customer, vehicle, employee);
         }else if (vehicle.getPrice() <= customer.getUpfrontPayment() ){
             processTransaction(customer, vehicle);
-        }else{System.out.println("Please bring more cash");}
+        }else{System.out.println(employee.getName()+" replies: Please bring more cash or get the rest financed");}
     }
     public void checkCreditHistory(Customer customer, Vehicle vehicle, Employee employee){//loan amount vehicle price - upfrontpayment
         double loanAmount = vehicle.getPrice() - customer.getUpfrontPayment();
