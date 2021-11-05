@@ -3,10 +3,6 @@ package JavaImtiaz;
 public class MyUtils {
     public static void main(String[] args) {
         System.out.println(args[0] +"\n"+ args[1]);
-//        Animal cat = new Cat();
-//        cat.sounds();
-//        Animal bird = new Bird();
-//        bird.sounds();
 
     }
 
@@ -25,7 +21,6 @@ public class MyUtils {
             total += y;
         }
         System.out.println(total);
-
 
     }
     public static void productAll(double... d){
