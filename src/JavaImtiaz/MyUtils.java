@@ -2,7 +2,19 @@ package JavaImtiaz;
 
 public class MyUtils {
     public static void main(String[] args) {
-        System.out.println(args[0] +"\n"+ args[1]);
+
+
+        int counter = 0;
+        int index = 0;
+        while(counter < 5){
+            counter++;
+
+            System.out.println(index+ " bop beep boop");
+            index++;
+
+
+        }
+        System.out.println("okokok" + 4);
 
     }
 
