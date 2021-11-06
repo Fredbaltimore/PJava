@@ -2,10 +2,14 @@ package JavaImtiaz;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class FileUtil {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+
         //takes user input asking for name and prints out greeting with the users name they just entered
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your name: ");
