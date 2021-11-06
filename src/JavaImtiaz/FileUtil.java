@@ -12,6 +12,18 @@ public class FileUtil {
         String name = sc.nextLine();
         System.out.println("Hello " + name);
 
+        Scanner s = new Scanner(System.in);
+        System.out.println("How old are you? ");
+        int age = s.nextInt();
+        if(age >= 18){
+            if(age >= 40 && age <= 65){
+                System.out.println("You're older");
+            }
+            if(age > 65 ){
+                System.out.println("hi grandpa");
+            }
+        }else System.out.println("TOO YOUNG");
+
         try {
             //reading random txt file
             File file = new File("src/JavaImtiaz/random");
