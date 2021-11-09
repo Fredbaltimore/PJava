@@ -29,18 +29,14 @@ public class GNumber extends JFrame {
               }else if (Integer.parseInt(tf.getText()) < random){
                   JOptionPane.showMessageDialog(null,"Too low, try again");
                   tf.setText("");
-
               }else if (Integer.parseInt(tf.getText()) > random){
                   JOptionPane.showMessageDialog(null,"Too low, try again");
                   tf.setText("");
-
               }
         });
         pack();
         setVisible(true);
-
     };
-
 
     public static void main(String[] args) {
         new GNumber();
