@@ -1,12 +1,14 @@
 package JavaImtiaz;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class FileS  {
     public static void main(String[] args) throws IOException {
+        PersonOne personOne = new PersonOne("richard","Berry", 34);
+        int p = personOne.age();
+        System.out.println(personOne.firstName());
+        System.out.println(p);
+        System.out.println(personOne);
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter text to go in the file ");
 //        String t = sc.nextLine();
@@ -32,5 +34,14 @@ public class FileS  {
         int number = 12241;
         int digit = ((number % 100) / 10) % 10;
         System.out.println(digit);
+        String str = """
+                Hello
+                Assholes
+                Again
+                """;
+        System.out.println(str);
+
+
+
     }
 }
