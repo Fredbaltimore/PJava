@@ -2,10 +2,10 @@ package JavaImtiaz;
 import java.util.Scanner;
 
 public class Bot {
-    final static Scanner scanner = new Scanner(System.in); // Do not change this line
+    final static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        greet("Fred", "1986"); // change it as you need
+        greet("Fred", "1986");
         remindName();
         guessAge();
         count();
