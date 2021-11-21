@@ -3,6 +3,57 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
+        //convert hashset to list
+        HashSet<Integer> listOne = new HashSet<>();
+        listOne.add(23);
+        listOne.add(33);
+        listOne.add(455);
+        listOne.add(44);
+        listOne.add(55);
+
+        //populates arrayList with values from hashset
+        List<Integer> lst = new ArrayList<>(listOne);
+        Collections.sort(lst);
+        System.out.println(lst);
+        //array LISTS to perform collection methods on
+        ArrayList<Integer> newList = new ArrayList<>();
+        ArrayList<Integer> anotherList = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            anotherList.add(i);
+
+        }
+        for (int i = 0; i <= 2 ; i++) {
+            newList.add(i);
+
+        }
+        //adds all of the elements newList to end of anotherList
+        anotherList.addAll(newList);
+        System.out.println(anotherList);
+        System.out.println(newList);
+        ArrayList<Integer> ray = new ArrayList<>();
+        ray.add(1);
+        ray.add(0);
+        //removes all instances of the number in ray that exists in anotherList
+        anotherList.removeAll(ray);
+        System.out.println(anotherList);
+        //contains checks if element exists in list
+        boolean hasValue = anotherList.contains(2);
+        System.out.println("hasValue tested with contains method");
+        System.out.println(hasValue);
+        //isEmpty method
+        System.out.println("isEmpty checks if list is empty or not below");
+        boolean empty = anotherList.isEmpty();
+        System.out.println(empty);
+
+        //retainAll is used to remove everything ACCEPT for values you'd like to retain
+        System.out.println("retainAll");
+        anotherList.retainAll(newList);
+        System.out.println(anotherList);
+        //clear method removes all elements of collection
+        anotherList.clear();
+
+        System.out.println("Clear method");
+        System.out.println(anotherList);
         //hashsets don't allow duplicates
         HashSet<Integer> hNumbers = new HashSet<>();
         hNumbers.add(32);
