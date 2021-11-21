@@ -5,7 +5,6 @@ import java.util.Arrays;
 
 public class Bus {
 
-
     public static void main(String[] args) {
         int month = 3;
         String mnth = null;
@@ -63,6 +62,5 @@ public class Bus {
             randomArray[i] += i * 3;
         }
         System.out.println(Arrays.toString(randomArray));
-
     }
 }
