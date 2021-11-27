@@ -10,6 +10,7 @@ public class Main {
         listOne.add(455);
         listOne.add(44);
         listOne.add(55);
+        listOne.add(66);
 
         //populates arrayList with values from hashset
         List<Integer> lst = new ArrayList<>(listOne);

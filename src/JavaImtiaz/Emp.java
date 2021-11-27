@@ -46,11 +46,11 @@ public class Emp implements Comparable<Emp>{
      */
     @Override
     public int compareTo(Emp o) {
-        //
+
         if(this.salary < o.salary){
-            return 1;
-        }else if (this.salary > o.salary){
             return -1;
+        }else if (this.salary > o.salary){
+            return 1;
         }
         return 0;
     }
